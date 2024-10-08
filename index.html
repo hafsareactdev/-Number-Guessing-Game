@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <p class="error"></p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="icon" href="images/joystick.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- Player One card  -->
+
+ <div class="main playerOneCard">
+    <h2>Player - 1</h2>
+    <input onkeydown="inputkey1(event)" type="number" class="playerOneInput" placeholder="player one value" >
+    <button onclick="click1()" class="playerOneButton">Guess</button>
+ </div>
+
+  <!-- Player Two card  -->
+ <div class="main playerTwoCard">
+    <p class="chanceNumber">Chance left <span class="ChanceCount"></span>/5</p>
+    <h2>Player - 2</h2>
+    <input onkeydown="inputkey2(event)" type="number" class="playerTwoInput" placeholder="player two value" >
+    <button onclick="click2()" class="playerTwoButton">Go</button>
+ </div>
+
+  <!-- Player Three card  -->
+
+ <div class="main playerThreeCard">
+    <p class="chanceNumber">Chance left <span class="ChanceCountThree"></span>/5</p>
+    <h2>Player - 3</h2>
+    <input onkeydown="inputkey3(event)" type="number" class="playerThreeInput" placeholder="player three value" >
+    <button onclick="click3()" class="playerThreeButton">Go</button>
+ </div>
+ 
+  <!-- Winner svg part  -->
+ <div class="winner">
+    <img src="https://media1.giphy.com/media/9xt1MUZqkneFiWrAAD/200w.gif?cid=6c09b952dxq8j7h01jrt24egfshwlmve539oxloqilw14kql&ep=v1_gifs_search&rid=200w.gif&ct=g" alt="gif">
+    <h2 class="winnerText"></h2>
+ </div>
+
+     <!-- JS link part  -->
+    <script src="js/script.js"></script>
+</body>
+</html>
